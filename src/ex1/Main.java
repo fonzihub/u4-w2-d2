@@ -10,16 +10,16 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Quante parole vuoi inserire?");
-        int n = scan.nextInt();
-        scan.nextLine();
+        int n = Integer.parseInt(scan.nextLine());
+
 
         Set<String> paroleDistinte = new HashSet<>();
         Set<String> duplicati = new HashSet<>();
 
-        String parola = null;
+
         for (int i = 0; i < n; i++) {
             System.out.println("inserisci parola " + (i + 1) + ": ");
-            parola = scan.nextLine();
+           String parola = scan.nextLine();
 
 
             if (paroleDistinte.contains(parola)) {

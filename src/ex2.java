@@ -14,28 +14,19 @@ public class ex2 {
             lista.add(randomNumber);
 
         }
-         List<Integer> listaOrdinata = new ArrayList<>(lista);
+        List<Integer> listaOrdinata = new ArrayList<>(lista);
         Collections.sort(listaOrdinata);
 
         List<Integer> listaFinale = new ArrayList<>();
         listaFinale.addAll(listaOrdinata);
 
-        for(int i = 0; i < e ; i++){
-            int randomNumber = (int)(Math.random()*101);
-            listaFinale.add(randomNumber);
-        }
+        listaFinale.addAll(listaFinale.reversed());
+//
         System.out.println("lista iniziale " + listaOrdinata);
         System.out.println("lista finale: " + listaFinale);
 
 
-
-
-
     }
-
-
-
-
 
 
 }
